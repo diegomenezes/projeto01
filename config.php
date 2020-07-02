@@ -9,6 +9,6 @@
 
 	spl_autoload_register($autoload);
 
-	define('INCLUDE_PATH','http://localhost/');
+	define('INCLUDE_PATH','http://localhost/projeto01/');
 
 ?>

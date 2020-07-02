@@ -30,10 +30,9 @@
 		}
 	?>
 
-	<?php new Emails(); ?>
 	<header>
 		<div class="center">
-			<div class="logo left">Diego Menezes</div><!-- logomarca -->
+			<div class="logo left">Gisele Bezerra</div><!-- logomarca -->
 
 			<nav class="desktop right">
 				<ul>
