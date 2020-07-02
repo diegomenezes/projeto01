@@ -29,7 +29,11 @@
 			
 		}
 	?>
-
+	<div class="sucesso">Formulário enviado com sucesso!</div>
+	<div class="erroform">Formulário não foi enviado!</div>
+	<div class="overlay-loading">
+		<img src="<?php echo INCLUDE_PATH ?>images/ajax-loader.gif">
+	</div><!--overlay-loading-->
 	<header>
 		<div class="center">
 			<div class="logo left">Gisele Bezerra</div><!-- logomarca -->
@@ -39,7 +43,7 @@
 					<li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>especialidades">Especialidades</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-					<li><a realtime href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
 			</nav><!-- menu-desktop -->
 			<nav class="mobile right">
@@ -50,7 +54,7 @@
 					<li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>especialidades">Especialidades</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-					<li><a realtime href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
 			</nav><!-- menu-mobile -->
 			<div class="clear"></div>
@@ -80,7 +84,8 @@
 	</footer>
 	<script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
 	<script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
-	<script src="<?php echo INCLUDE_PATH; ?>js/constants.js"></script>
+	<script src="<?php echo INCLUDE_PATH; ?>js/constants.js"></script>	
+	<script src="<?php echo INCLUDE_PATH; ?>js/formularios.js"></script>
 	<?php
 		if($url == 'home' || $url == ''){
 	?>

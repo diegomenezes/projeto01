@@ -6,24 +6,10 @@
 		<div class="banner-single" style="background-image: url('<?php echo INCLUDE_PATH; ?>images/background-image3.jpg');"></div><!--banner-single-->
 		<div class="overlay"></div><!-- overlay -->
 		<div class="center">
-			<?php 
-				if(isset($_POST['acao'])){
-					//Formulário Enviado
-					if($_POST['email'] != ''){
-						$email = $_POST['email'];
-						if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-						  //Email ok pode enviar
-						}else{
-							echo '<script>alert("Email inválido")</script>';
-						}
-					}else{
-						echo '<script>alert("Insira um email válido")</script>';
-					}
-				}
-			?>
 			<form method="post">
 				<h2>Qual o seu melhor e-mail?</h2>
-				<input type="email" name="email" placeholder="" required>
+				<input type="email" name="email"required>
+				<input type="hidden" name="identificador" value="form_home">
 				<input type="submit" name="acao" value="Cadastrar!">
 			</form>
 		</div>
@@ -51,19 +37,19 @@
 			<h2 class="title">Especialidades</h2>
 			<div class="box-especialidade w33 left">
 				<h3><i class="fab fa-css3-alt"></i></h3>
-				<h4>CSS3</h4>
+				<h4>Copywriting</h4>
 				<p>A certificação de metodologias que nos auxiliam a lidar com a estrutura atual da organização agrega valor ao estabelecimento do impacto na agilidade decisória. No entanto, não podemos esquecer que o desenvolvimento contínuo de distintas formas de atuação oferece uma interessante oportunidade para verificação das formas de ação. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a determinação clara de objetivos pode nos levar a considerar a reestruturação dos modos de operação convencionais.</p>
 			</div><!-- box-especialidade -->
 
 			<div class="box-especialidade w33 left">
 				<h3><i class="fab fa-html5"></i></h3>
-				<h4>HTML5</h4>
+				<h4>Artigos</h4>
 				<p>A certificação de metodologias que nos auxiliam a lidar com a estrutura atual da organização agrega valor ao estabelecimento do impacto na agilidade decisória. No entanto, não podemos esquecer que o desenvolvimento contínuo de distintas formas de atuação oferece uma interessante oportunidade para verificação das formas de ação. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a determinação clara de objetivos pode nos levar a considerar a reestruturação dos modos de operação convencionais.</p>
 			</div><!-- box-especialidade -->
 
 			<div class="box-especialidade w33 left">
 				<h3><i class="fab fa-js"></i></h3>
-				<h4>Javascript</h4>
+				<h4>Vídeos de Vendas</h4>
 				<p>A certificação de metodologias que nos auxiliam a lidar com a estrutura atual da organização agrega valor ao estabelecimento do impacto na agilidade decisória. No entanto, não podemos esquecer que o desenvolvimento contínuo de distintas formas de atuação oferece uma interessante oportunidade para verificação das formas de ação. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a determinação clara de objetivos pode nos levar a considerar a reestruturação dos modos de operação convencionais.</p>
 			</div><!-- box-especialidade -->
 			<div class="clear"></div>
