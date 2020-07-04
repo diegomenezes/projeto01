@@ -36,7 +36,7 @@
 		</div><!--box-usuario-->
 		<div class="items-menu">
 			<h2>Cadastro</h2>
-				<a href="">Cadastrar Depoimento</a>
+				<a href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-depoimento">Cadastrar Depoimento</a>
 				<a href="">Cadastrar Serviço</a>
 				<a href="">Cadastrar Slides</a>
 			<h2>Gestão</h2>
@@ -55,43 +55,23 @@
 		
 <header>
 	<div class="center">
-		<div class="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+		<div class="menu-btn">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</div><!--menu-btn-->
+
 	<div class="logout">
+		<div class="btn-home">
+			<a href="<?php echo INCLUDE_PATH_PAINEL ?>home"><i class="fa fa-home" aria-hidden="true"></i></a>
+		</div>
 		<a href="<?php echo INCLUDE_PATH_PAINEL ?>?deslogar"><i class="fa fa-sign-out" aria-hidden="true"></i><span> Sair</span></a>	
 	</div><!--logout-->
 </div><!--center-->
 </header>
 <div class="content">
-	<div class="box-content w100">
-		<h2><i class="fa fa-home"></i> Painel de Controle - Gisele Bezerra CopyWriter</h2>
+	
+	<!--Puxando conteúdo da Home-->
+	<?php Painel::carregarPagina(); ?>
 
-		<div class="box-metricas">
-			<div class="box-metrica-single">
-				<div class="box-metrica-wraper">
-					<h2>Usuários Online</h2>
-					<p>10</p>
-				</div><!--box-metrica-wraper-->
-			</div><!--box-metrica-single-->
-			<div class="box-metrica-single">
-				<div class="box-metrica-wraper">
-					<h2>Total de Visitas</h2>
-					<p>555</p>
-				</div><!--box-metrica-wraper-->
-			</div><!--box-metrica-single-->
-			<div class="box-metrica-single">
-				<div class="box-metrica-wraper">
-					<h2>Visitas Hoje</h2>
-					<p>47</p>
-				</div><!--box-metrica-wraper-->
-			</div><!--box-metrica-single-->
-			<div class="clear"></div>
-		</div><!--box-metricas-->
-
-</div><!--box-content-->
-
-
-
-<div class="clear"></div>
 </div><!--content-->
 <div class="clear"></div>
 <script type="text/javascript" src="<?php echo INCLUDE_PATH ?>js/jquery.js"></script>

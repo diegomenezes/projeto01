@@ -19,6 +19,9 @@
 	define('PASSWORD','');
 	define('DATABASE','projeto_01');
 
+	//Constantes para o painel de controle
+	define('NOME_EMPRESA', 'Gisele Bezerra');
+
 	//Funcoes
 	function pegaCargo($cargo){
 		$arr = [
