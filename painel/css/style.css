@@ -10,6 +10,10 @@ html,body{
 	background: rgb(225,225,225);
 }
 
+body{
+	overflow-x: hidden;
+}
+
 .box-login h2{
 	text-align: center;
 	font-size: 19px;
@@ -51,15 +55,259 @@ html,body{
 	font-size: 14px;
 }
 
+/* Box erro do painel */
 .erro-box{
-	position: fixed;
-	display: none;
-	right: 20px;
-	top: 60px;
-	padding: 15px 2%;
-	z-index: 999;
+	padding: 8px 2%;
+	width: 100%;
 	color: #a94442;
-	font-weight: bold;
+	text-align: center;
 	font-size: 14px;
 	background-color: #f2dede;
+}
+
+/* Fim do painel login*
+
+/* Painel de Controle */
+
+.clear{
+	clear: both;
+}
+
+.center{
+	padding: 0 2%;
+}
+
+.logout{
+	float: right;
+}
+
+.logout a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.logout a span{
+	font-size: 17px;
+	text-decoration: none;
+}
+
+header{
+	left: 250px;
+	position: relative;
+	padding: 10px 0;
+	background: #78909c;
+	width: calc(100% - 250px);
+	height: 45px;
+}
+
+.menu-btn .fa{
+	float: left;
+	cursor: pointer;
+	font-size: 23px;
+	color: white;
+}
+
+.menu-wrapper{
+	width: 250px;
+}
+
+aside{
+	overflow-x:hidden;
+	overflow-y: auto;
+	height: 100%;
+	padding:10px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #455a64;
+	float: left;
+	width: 250px;
+}
+
+div.box-usuario{
+	text-align: center;
+}
+
+div.avatar-usuario {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	border: 3px solid #2F3D42;
+	display: inline-block;
+	text-align: left;
+}
+
+.avatar-usuario i{
+	font-size: 50px;
+	color: #2F3D42;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+
+.imagem-usuario{
+	width: 130px;
+	height: 130px;
+	position: relative;
+	display: inline-block;
+	border-radius: 50%;
+	border: 3px solid #2F3D42;
+}
+
+.imagem-usuario img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+}
+
+.nome-usuario{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.nome-usuario p{
+	color: white;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.items-menu{
+	margin-top: 30px;
+}
+
+.items-menu h2{
+	text-align: left;
+	font-weight: normal;
+	font-size: 17px;
+	background: #2F3D42;
+	color: white;
+	padding:8px;
+}
+
+.items-menu a{
+	display: block;
+	padding: 8px;
+	font-weight: 300;
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid #2F3D42;
+}
+
+/*Conteudo principal do painel*/
+
+.w100{
+	width: 100%;
+}
+
+.w49{
+	width: 49%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+
+
+.content{
+	width: calc(100% - 300px);
+	position: relative;
+	left: 300px;
+	padding: 10px;
+}
+
+.box-content{
+	background: white;
+	padding: 30px;
+	margin-bottom: 25px;
+}
+
+.box-content h2{
+	font-weight: 300;
+	font-size: 23px;
+}
+
+
+/*Box Metricas*/
+
+.box-metricas{
+	margin-top:16px;
+	padding:0 15px;
+}
+
+.box-metrica-single{
+	float: left;
+	position: relative;
+	width: 33.3%;
+	background: #F4B03E;
+	border: 5px solid white;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(2){
+	background: #E05C4E;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(3){
+	background: #0091ea;
+}
+
+.box-metrica-wraper{
+	padding: 10px 20px;
+	text-align: left;
+	color: white;
+}
+
+.box-metrica-wraper h2{
+	font-size: 28px;
+}
+
+.box-metrica-wraper p{
+	padding: 10px 0;
+	font-size: 26px;
+}
+
+@media screen and (max-width: 1200px){
+	.box-metrica-single{
+		height: 150px; 
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.box-metrica-single{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	aside{
+		display: none;
+	}
+
+	.content{
+		width: 100%;
+		left: 0;
+	}
+
+	header{
+		left: 0;
+		width: 100%;
+	}
+}
+
+@media screen and(max-width: 400px){
+	.menu-wrapper{
+		width: 200px;
+	}
+
 }
