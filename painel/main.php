@@ -60,10 +60,10 @@
 		</div><!--menu-btn-->
 
 	<div class="logout">
-		<div class="btn-home">
-			<a href="<?php echo INCLUDE_PATH_PAINEL ?>home"><i class="fa fa-home" aria-hidden="true"></i></a>
-		</div>
+		
+		<a href="<?php echo INCLUDE_PATH_PAINEL ?>home"><i class="fa fa-home" aria-hidden="true"></i><span> Página Inicial</span></a>		
 		<a href="<?php echo INCLUDE_PATH_PAINEL ?>?deslogar"><i class="fa fa-sign-out" aria-hidden="true"></i><span> Sair</span></a>	
+		
 	</div><!--logout-->
 </div><!--center-->
 </header>

@@ -61,7 +61,7 @@ body{
 	width: 100%;
 	color: #a94442;
 	text-align: center;
-	font-size: 14px;
+	font-size: 15px;
 	background-color: #f2dede;
 }
 
@@ -75,6 +75,7 @@ body{
 
 .center{
 	padding: 0 2%;
+	margin: 0 auto;
 }
 
 .logout{
@@ -82,13 +83,15 @@ body{
 }
 
 .logout a{
-	color: white;
+	padding: 0 20px;
+	position: relative;
 	text-decoration: none;
-	font-size: 20px;
+	color: white;
+	font-size: 14px;
 }
-
-.logout a span{
-	font-size: 17px;
+	text-decoration: none;
+.logout a > span{
+	font-size: 14px;
 	text-decoration: none;
 }
 
@@ -98,7 +101,7 @@ header{
 	padding: 10px 0;
 	background: #78909c;
 	width: calc(100% - 250px);
-	height: 45px;
+	overflow: hidden;
 }
 
 .menu-btn .fa{
@@ -223,7 +226,7 @@ div.avatar-usuario {
 .content{
 	width: calc(100% - 300px);
 	position: relative;
-	left: 300px;
+	left: 250px;
 	padding: 10px;
 }
 
@@ -277,6 +280,30 @@ div.avatar-usuario {
 	font-size: 26px;
 }
 
+/*Tabela Responsiva*/
+
+.table-responsive{
+	margin: 20px 0;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.table-responsive .row:nth-of-type(1){
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+}
+
+.table-responsive .row{
+	color: #777;
+	padding: 8px 0;
+}
+
+.col{
+	float: left;
+	width: 50%;
+}
+
+/* Media Screen */
 @media screen and (max-width: 1200px){
 	.box-metrica-single{
 		height: 150px; 

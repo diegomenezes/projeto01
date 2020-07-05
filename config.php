@@ -1,5 +1,8 @@
 <?php
 	session_start();
+
+	date_default_timezone_set('America/Sao_Paulo');
+
 	$autoload = function($class){
 		if($class == 'Emails'){
 			include('classes/phpmailer/PHPMailerAutoLoad.php');
@@ -17,7 +20,7 @@
 	define('HOST','localhost');
 	define('USER','root');
 	define('PASSWORD','');
-	define('DATABASE','projeto_01');
+	define('DATABASE','projeto01');
 
 	//Constantes para o painel de controle
 	define('NOME_EMPRESA', 'Gisele Bezerra');
