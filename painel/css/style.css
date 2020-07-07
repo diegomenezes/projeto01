@@ -332,6 +332,7 @@ div.avatar-usuario {
 }
 
 .box-content form input[type=text],
+.box-content form select,
 .box-content form input[type=password]{
 	font-size: 16px;
 	font-weight: normal;
@@ -359,6 +360,14 @@ div.avatar-usuario {
 	color: white;
 	border: 0;
 	font-size: 16px;
+}
+
+.items-menu a.menu-active{
+	background-color: #3a4b51;
+}
+
+.items-menu a.menu-active::before{
+	content:'> ';
 }
 
 

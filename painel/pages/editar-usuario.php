@@ -22,7 +22,6 @@
 							$_SESSION['img'] = $imagem;
 							header("Refresh:0");
 							Painel::alert('sucesso','Atualizado com sucesso junto com a imagem!');
-
 						}else{
 							Painel::alert('erro','Ocorreu um erro ao atualizar junto com a imagem');
 						}

@@ -71,7 +71,12 @@
 		public static function deleteFile($file){
 			@unlink('uploads/'.$file);
 		}//deleteFile
-	}
 
+		public static $cargos = [
+		'0' => 'Normal',
+		'1' => 'Suporte',
+		'2' => 'Administrador'];//cargos
+	
 
+	}//Class Painel
  ?>

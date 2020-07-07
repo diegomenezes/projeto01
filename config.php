@@ -1,4 +1,11 @@
 <?php
+
+
+	/*
+		TODO: Variável global com os cargos.
+	*/
+
+
 	session_start();
 
 	date_default_timezone_set('America/Sao_Paulo');
@@ -25,6 +32,12 @@
 	//Constantes para o painel de controle
 	define('NOME_EMPRESA', 'Gisele Bezerra');
 
+	//Variaveis cargo painel
+	$cargos = [
+		'0' => 'Normal',
+		'1' => 'Suporte',
+		'2' => 'Administrador'];
+
 	//Funcoes
 	function pegaCargo($cargo){
 		$arr = [
@@ -33,6 +46,30 @@
 		'2' => 'Administrador'];
 
 		return $arr[$cargo];
-	}
+	}//pegaCargo
+
+	function selecionadoMenu($par){
+		$url = explode('/',@$_GET['url'])[0];
+		if($url == $par){
+			echo 'class="menu-active"';
+		}
+	}//selecionadoMenu
+
+	function verificaPermissaoMenu($permissao){
+		if($_SESSION['cargo'] >= $permissao){
+			return;
+		}else{
+			echo 'style="display:none;"';
+		}
+	}//verificaPermissaoMenu
+
+	function verificaPermissaoPagina($permissao){
+		if($_SESSION['cargo'] >= $permissao){
+			return;
+		}else{
+			include('painel/pages/permissao_negada.php');
+			die();
+		}
+	}//verificaPermissao
 
 ?>
